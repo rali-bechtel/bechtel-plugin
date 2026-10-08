@@ -1,0 +1,14 @@
+{
+  "name": "acme-plugins",
+  "owner": {
+    "name": "Bechtel Team",
+    "email": "bechtel-team@acme.example"
+  },
+  "plugins": [
+    {
+      "name": "quiz-maker",
+      "source": "./plugins/quiz-maker",
+      "description": "Turn long programming text into MCQ quizzes (a-d) with answer keys"
+    }
+  ]
+}

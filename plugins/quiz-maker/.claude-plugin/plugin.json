@@ -1,0 +1,41 @@
+{
+  "name": "quiz-maker",
+  "displayName": "Quiz Maker",
+  "version": "1.0.0",
+  "description": "Generate multiple-choice quizzes (options a-d) from long programming content, using a skill plus writer and reviewer subagents",
+  "author": {
+    "name": "Acme Platform Team",
+    "email": "platform-team@acme.example"
+  },
+  "license": "MIT",
+  "keywords": ["quiz", "mcq", "education", "programming"],
+  "userConfig": {
+    "question_count": {
+      "type": "number",
+      "title": "Default question count",
+      "description": "How many questions to generate when the user does not say",
+      "default": 10,
+      "min": 1,
+      "max": 50
+    },
+    "difficulty": {
+      "type": "string",
+      "title": "Default difficulty",
+      "description": "Difficulty used when the user does not say",
+      "options": ["easy", "medium", "hard"],
+      "default": "medium"
+    },
+    "include_explanations": {
+      "type": "boolean",
+      "title": "Include explanations",
+      "description": "Add a one-line explanation under each answer",
+      "default": true
+    },
+    "quiz_title_prefix": {
+      "type": "string",
+      "title": "Quiz title prefix",
+      "description": "Text placed before the topic in the quiz title",
+      "default": "Quiz"
+    }
+  }
+}
